@@ -6,6 +6,17 @@
 Адаптивное React CRM приложение. 
 Представлено в виде двух таблиц (пользователи и заказы).
 
+## Стек 
+- React-router
+- Web worker
+- React Context
+- Lodash
+- Faker/Casual
+- Antd
+- Shards
+- React-icons
+
+
 
 ## Доступные функции:
 
