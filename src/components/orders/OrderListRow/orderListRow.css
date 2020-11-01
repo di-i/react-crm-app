@@ -1,0 +1,70 @@
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.badge-delivered {
+    color: #34c38f;
+    background-color: rgba(52, 195, 143, .18);
+}
+
+
+.badge-undelivered {
+    color: #f46a6a;
+    background-color: rgba(244, 106, 106, .18);
+}
+
+
+.badge-delay {
+    color: #f8c434;
+    background-color: rgb(254, 248, 229)
+}
+
+
+.badge-on-the-way {
+    background-color: #cce5ff;
+    color: #6eb0f7;
+}
+
+
+.badge-in-kitchen {
+    background-color: #bcf3ff;
+    color: #0ccdf8;
+}
+
+
+.status-item {
+    display: block;
+    padding: 6px 0;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+.order-id,
+.order-fullname,
+.order-day,
+.order-address,
+.order-amount {
+    font-weight: bold;
+}
+
+.order-item,
+.order-phone,
+.order-city,
+.order-time {
+    font-size: 13px;
+}

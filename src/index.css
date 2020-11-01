@@ -1,0 +1,39 @@
+/* ====================  fonts  ======================  */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500&display=swap');
+
+/* ====================  / fonts  ======================  */
+
+
+/* ====================  common  ======================  */
+
+
+*,
+:after,
+:before {
+    box-sizing: border-box !important;
+}
+
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'IBM Plex Sans', 'sans-datarif' !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #6E6893 !important;
+    text-align: left !important;
+    background-color: #f2f0f9 !important;
+}
+
+
+button {
+    outline: none !important;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* ====================  / common  ======================  */
+

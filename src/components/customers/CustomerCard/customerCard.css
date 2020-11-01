@@ -1,0 +1,87 @@
+.card-header-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card-body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    margin-bottom: -10px !important;
+}
+
+.card-footer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.card-social {
+    display: flex;
+}
+
+.card-social a {
+    margin-right: 10px;
+}
+
+.card-social a:last-child {
+    margin-right: 0;
+}
+
+.card__avatar {
+    border-radius: 50%;
+}
+
+
+.card__fullname {
+    font-size: 18px;
+}
+
+
+.card__phone,
+.card__email,
+.card__job {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card__address {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.card__address p {
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .card__avatar {
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .card-header-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

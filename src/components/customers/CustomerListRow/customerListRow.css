@@ -1,0 +1,136 @@
+.badge-pill {
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 10rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.badge-soft-success {
+    color: #34c38f !important;
+    background-color: rgba(52,195,143,.18) !important;
+}
+
+
+.badge-soft-danger {
+    color: #f46a6a !important;
+    background-color: rgba(244,106,106,.18) !important;
+}
+
+
+.btn-edit {
+    margin-right: 10px;
+}
+
+
+.btn-edit:hover,
+.btn-delete:hover {
+    transform: scale(1.2);
+    transition: all .3 ease-out;
+}
+
+
+.custom-control-label::before {
+    border: 1px solid rgba(139, 131, 186, .7) !important;
+}
+
+
+.ant-btn {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+
+.ant-btn:hover,
+.ant-btn:active,
+.ant-btn:focus {
+    background-color: transparent !important;
+}
+
+
+.ant-btn-text {
+    color: #6E6893 !important;
+}
+
+
+.ant-row-rtl .ant-btn {
+    margin-right: 0;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+
+.menu-item-activate {
+    color: #65d865;
+    margin-bottom: 10px;
+}
+
+
+.menu-item-inactivate {
+    color: #eb6e4f;
+    margin-bottom: 10px;
+}
+
+
+.customer-fullname,
+.customer-actions {
+    font-weight: bold !important;
+}
+
+
+.customer-last_login {
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    tbody tr {
+        position: relative;
+    }
+
+     td:last-child {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        z-index: 99,
+    } 
+
+    .customer-fullname {
+        margin-left: 30px;
+    }
+
+    .customer-id,
+    .customer-email,
+    .customer-status {
+        margin-left: 30px;
+    }
+
+
+    .customer-status {
+        margin-top: -10px;
+    }
+}
+
+
+@media only screen and (max-width: 260px) {
+    .customer-email,
+    .customer-status,
+    .customer-fullname {
+        margin-left: 0;
+    }
+}

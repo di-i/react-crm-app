@@ -1,0 +1,53 @@
+.btn-success {
+    margin-right: 45px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #6D5BD0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px 20px 15px 20px !important;
+}
+
+
+.btn-success:hover {
+    background-color: #F4F2FF !important;
+    color: #6D5BD0 !important;
+
+}
+
+.button-wrapper {
+    display: inline-flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 580px) {
+    .button-wrapper {
+        width: 100%;
+    }
+
+    .btn-success {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    .btn-success {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+}
+
+
+@media only screen and (max-width: 260px) {
+
+    .btn-success {
+        padding: 15px 12px 15px !important
+    }
+}

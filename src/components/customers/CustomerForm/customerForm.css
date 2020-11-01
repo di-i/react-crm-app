@@ -1,0 +1,16 @@
+.customer-form-input {
+    border: none !important;
+    border-bottom: 1px solid #C6C2DE !important;
+}
+
+
+.customer-form-input:focus {
+    border-bottom: 1px solid #47cf25 !important;
+}
+
+
+.customer-form-error {
+    color: #db2269;
+    font-size: 0.625em;
+    display: relative;
+}

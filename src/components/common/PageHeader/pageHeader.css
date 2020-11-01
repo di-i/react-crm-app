@@ -1,0 +1,14 @@
+.page-header__wrapper,
+.order-page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 580px) {
+
+    .page-header__wrapper,
+    .order-page-header__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}

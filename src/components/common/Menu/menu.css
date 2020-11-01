@@ -1,0 +1,100 @@
+.menu-button__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+
+.menu-button-wrapper {
+    position: relative;
+}
+
+
+button #menu-button__open {
+    padding-left: 30px;
+}
+
+
+nav#menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+[aria-labelledby='menu'] {
+    height: 100vh !important;
+    background: #fff !important;
+}
+
+
+.router-link-customer,
+.router-link-order {
+    font-size: 18px;
+    color: #6E6893;
+    padding: 20px 50px;
+    text-align: left
+}
+
+
+.router-link-customer:hover,
+.router-link-customer:active,
+.router-link-customer:focus,
+.router-link-order:hover,
+.router-link-order:active,
+.router-link-order:focus {
+    color: #fff;
+    background-color: #dad5f7;
+}
+
+
+.active-navlink-customer,
+.active-navlink-order {
+    color: #fff;
+    background-color: #dad5f7;
+}
+
+
+.logo {
+    padding: 50px 15px;
+    background-color: rgba(109, 91, 208, 0.5);
+    margin-bottom: 30px;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+
+}
+
+
+/* ==================================   icons   ============================ */
+
+
+.md-group,
+.md-assignment {
+    margin-right: 20px;
+}
+
+.md-restaurant {
+    margin-bottom: 8px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+
+.md-clear {
+    font-size: 1.5em;
+}
+
+
+.fa-bars {
+    margin: 10px 30px;
+}
+
+
+/* ==================================  / icons   ============================ */
+
+
+@media only screen and (max-width: 580px) {
+    [aria-labelledby='menu'] {
+        width: 200px !important;
+    }
+}

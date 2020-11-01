@@ -1,0 +1,98 @@
+.order-card__header {
+    display: flex;
+    padding: 20px 20px 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+.order-card__title {
+    color: #6E6893 !important;
+}
+
+
+.order-card__id {
+    margin-bottom: 0;
+}
+
+
+.order-card__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px 30px !important;
+}
+
+
+.order-card__info,
+.order-card__payment,
+.order-card__delivery,
+.order-card__total {
+    margin-bottom: 10px !important;
+}
+
+.order-card__total {
+    margin-top: 20px;
+    padding-left: 90px;
+}
+
+
+.order-card__subtitle {
+    display: flex;
+}
+
+
+.order-card__subtitle p {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #C6C2DE;
+
+}
+
+
+.order-card__note {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+.order-card__fullname,
+.order-card__paid,
+.order-card__day,
+.order-card__amount {
+    font-weight: bold;
+}
+
+.order-card__note p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.order-card__delivery {
+    padding-top: 20px;
+}
+
+.order-card__status {
+    margin-top: -10px !important;
+}
+
+.order-card__footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+
+@media only screen and (max-width: 757px) {
+    .order-card__total {
+        padding-left: 15px !important;
+    }
+}

@@ -1,0 +1,70 @@
+.select-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    color: #8a929a !important;
+}
+
+
+.form-group-day,
+.form-group-status {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.order-form-select {
+    margin-left: 20px;
+    width: 140px !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #C6C2DE !important;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+
+#day,
+#status,
+#paid
+#cardType {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    font-size: 14px;
+    color: #696f75 !important;
+}
+
+
+#day:focus,
+#status:focus,
+#paid:focus,
+#cardType:focus {
+    border-bottom: 1px solid #47cf25 !important;
+}
+
+
+.order-form-input {
+    border: none !important;
+    border-bottom: 1px solid #C6C2DE !important;
+}
+
+
+.order-form-input:focus {
+    border-bottom: 1px solid #47cf25 !important;
+}
+
+
+.order-form-error {
+    color: #db2269;
+    font-size: 0.625em;
+    display: relative;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .select-wrapper {
+        flex-direction: column;
+    }
+
+    .order-form-select {
+        margin-left: 0;
+        width: 94px !important;
+    }
+}
