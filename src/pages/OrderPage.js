@@ -332,15 +332,21 @@ class OrderPage extends Component {
         this.onChangePerPageHandler(this.state.perPage);
     }
 
-    renderRangeOrders() {
-        const { offset, perPage, searchOrders } = this.state
+   renderRangeOrders() {
+        const { offset, perPage, searchOrders, orders } = this.state
+        let changedOffset;
+        if (searchOrders < orders) {
+          changedOffset = 0
+        } else {
+          changedOffset = offset
+        }
         const endIndex = offset + perPage;
         if (searchOrders.length === 0) {
             return `0 - 0 of 0`
         } else if (endIndex <= searchOrders.length) {
-            return `${offset + 1} - ${endIndex} of ${searchOrders.length}`
+            return `${changedOffset + 1} - ${endIndex} of ${searchOrders.length}`
         } else {
-            return `${offset + 1} - ${searchOrders.length} of ${searchOrders.length}`
+            return `${changedOffset + 1} - ${searchOrders.length} of ${searchOrders.length}`
         }
     }
 
