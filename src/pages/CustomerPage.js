@@ -180,14 +180,20 @@ class CustomerPage extends Component {
 
 
   renderRangeCustomers() {
-    const { offset, perPage, searchCustomers } = this.state
-    const endIndex = offset + perPage;
+    const { offset, perPage, searchCustomers, customers} = this.state
+    let changedOffset;
+    if (searchCustomers < customers) {
+      changedOffset = 0
+    } else {
+      changedOffset = offset
+    }
+    let endIndex = offset + perPage
     if (searchCustomers.length === 0) {
       return `0 - 0 of 0`
     } else if (endIndex <= searchCustomers.length) {
-      return `${offset + 1} - ${endIndex} of ${searchCustomers.length}`
-    } else {
-      return `${offset + 1} - ${searchCustomers.length} of ${searchCustomers.length}`
+      return `${changedOffset + 1} - ${endIndex} of ${searchCustomers.length}`
+    } else if (endIndex > searchCustomers.length) {
+      return `${changedOffset + 1} - ${searchCustomers.length} of ${searchCustomers.length}`
     }
   }
 
